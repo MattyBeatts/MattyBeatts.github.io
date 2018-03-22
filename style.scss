@@ -1,89 +1,80 @@
 
 ---
 ---
-
 //
 // IMPORTS
 //
-
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
-
 /**************/
 /* BASE RULES */
 /**************/
-
 html {
   font-size: 100%;
 }
-
 body {
-    background-image: url("https://www.planwallpaper.com/static/images/cool-wallpapers-12.jpg");
+	background-image: url("data:image/jpeg;base64,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");
+	background-repeat: no-repeat;
+  font: 18px/1.4 $helvetica;
+  color: $white;
 }
-
 .container {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-	background: rgba(204, 51, 255, 0.5)
+  background: linear-gradient(to bottom right, #0B0B61, #6E6E6E);
+  border-radius: 25px;
 }
-
+table {
+border-collapse: collapse;
+width: 100%;
+}
+table, th, td {
+border: 1px solid white;
+background-color:#white;
+}
+td {
+vertical-align: middle; 
+padding: 10px;
+}	
+th {
+color: black;
+background: white;
+height:50px;
+vertical-align: middle;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $white;
   font-weight: bold;
-
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-
   @include mobile {
     line-height: 1.4;
   }
 }
-
 h1 {
   font-size: 30px;
   a {
     color: inherit;
   }
 }
-
 h2 {
   font-size: 24px;
 }
-
-table {
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-table {
-    width: 100%;
-}
-
-th {
-    height: 50px;
-}
-
 h3 {
   font-size: 20px;
 }
-
 h4 {
   font-size: 18px;
   color: $gray;
 }
-
 p {
   margin: 15px 0;
 }
-
 a {
   color: $blue;
   text-decoration: none;
@@ -92,50 +83,39 @@ a {
     color: $blue;
   }
 }
-
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
-
 ul {
   list-style-type: disc;
 }
-
 ol {
   list-style-type: decimal;
 }
-
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
-
 ul ul, ol ul {
   list-style-type: circle;
 }
-
 em, i {
   font-style: italic;
 }
-
 strong, b {
   font-weight: bold;
 }
-
 img {
   max-width: 100%;
 }
-
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
 }
-
 .date {
   font-style: italic;
   color: $gray;
 }
-
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -145,7 +125,6 @@ img {
   color: $black;
   background: $lightGray;
 }
-
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
@@ -153,59 +132,47 @@ img {
     content: " ";
     display: table;
 }
-
 .clearfix:after {
     clear: both;
 }
-
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
-
 //
 // .masthead
 //
-
 .wrapper-masthead {
   margin-bottom: 50px;
 }
-
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-
   @include mobile {
     text-align: center;
   }
 }
-
 .site-avatar {
   float: left;
   width: 70px;
   height: 70px;
   margin-right: 15px;
-
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
   }
-
   img {
     border-radius: 5px;
   }
 }
-
 .site-info {
   float: left;
-
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
   }
 }
-
 .site-name {
   margin: 0;
   color: $darkGray;
@@ -215,58 +182,48 @@ img {
   font-size: 28px;
   letter-spacing: 1px;
 }
-
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
-
   @include mobile {
     margin: 3px 0;
   }
 }
-
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
   }
-
   a {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-
     @include mobile {
       margin: 0 10px;
       color: $blue;
     }
   }
 }
-
 //
 // .main
 //
-
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
-
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
-
 .post {
   blockquote {
     margin: 1.8em .8em;
@@ -276,29 +233,21 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
-
   .comments {
     margin-top: 10px;
   }
-
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
   }
 }
-
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
-
 footer {
   padding: 20px 0;
   text-align: center;
 }
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
