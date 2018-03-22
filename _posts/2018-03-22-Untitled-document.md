@@ -1,5 +1,5 @@
 ---
-title: Untitled document
+title: Badges 2
 layout: post
 author: matthew.beattie
 permalink: /untitled-document/
